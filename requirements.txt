@@ -38,6 +38,7 @@ pylint
 pymongo==3.10.1
 pytest
 pytorch-lightning==1.7.*
+openmim
 rich
 scikit-image
 scikit-learn

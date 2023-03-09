@@ -144,6 +144,10 @@ RUN apt-get update && sed 's/#.*//g; s/\r//g' /tmp/apt-requirements.txt | \
     xargs apt-get install -y --no-install-recommends && \
     rm -rf /var/lib/apt/lists/*
 
+#RUN python -m pip install git+https://github.com/open-mmlab/mim.git
+#RUN python -m pip install mmcv-full -f https://download.openmmlab.com/mmcv/dist/cu$(echo ${CUDA_VERSION} | sed 's/\.//; s/\..*//')/torch1.12/index.html
+#RUN python -m mim install mmaction2 -f https://github.com/open-mmlab/mmaction2.git
+
 ARG GID
 ARG UID
 ARG GRP

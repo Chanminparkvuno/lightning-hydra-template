@@ -151,3 +151,6 @@ configs/local/default.yaml
 .env
 
 ./data/
+notebooks/
+train_code/
+mmaction2/
